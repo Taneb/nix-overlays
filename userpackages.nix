@@ -11,7 +11,6 @@ self: super:
       gitFull
       graphviz
       jq
-      libreoffice
       meld
       pandoc
       nix-index
@@ -24,7 +23,6 @@ self: super:
     inherit (self.haskellPackages)
       ghcid
       glirc;
-    inherit (self.texlive.combined) scheme-full;
     neovim = self.neovim.override {
       vimAlias = true;
       viAlias = true;
